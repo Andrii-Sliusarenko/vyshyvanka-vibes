@@ -1,0 +1,102 @@
+/* ================ Testimonials ================ */
+
+/* === Testimonials mob === */
+
+.testimonials-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.375;
+    letter-spacing: -0.03em;
+    color: #fcf9f9;
+}
+
+.testimonials-subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fcf9f9;
+    margin-top: 54px;
+}
+
+.testimonials-text {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: inherit;
+    margin-top: 8px;
+}
+
+.testimonials-list-box {
+    box-shadow: 0 2px 32px 4px rgba(18, 20, 23, 0.02);
+    border: 1px solid rgba(252, 249, 249, 0.1);
+    border-radius: 4px;
+    padding: 0px 18px 18px 18px;
+    position: relative;
+    margin-top: 64px;
+}
+
+.testimonials-foto {
+    border-radius: 100%;
+    box-shadow: 0 1px 4px 0 rgba(16, 24, 40, 0.06);
+    width: 64px;
+    height: 64px;
+}
+
+.testimonials-item .testimonials-foto {
+    position: absolute;
+    left: 50%;
+    top: 8px;
+    transform: translate(-50%, -50%);
+}
+
+/* 1 Варіант з закритими відгуками */
+@media screen and (max-width: 767px) {
+    .testimonials-item:not(:first-child) {
+        display: none;
+    }
+}
+
+/* === Testimonials Tablet === */
+
+@media screen and (min-width: 768px) {
+    .testimonials-title {
+        font-size: 44px;
+        line-height: 1.45;
+    }
+
+    .testimonials-text {
+        font-size: 16px;
+    }
+
+    .testimonials-list {
+        display: flex;
+        text-align: center;
+        gap: 32px;
+    }
+
+    .testimonials-item {
+        width: calc((100% - 32px) / 2);
+    }
+
+    /* 1 Варіант з закритими відгуками */
+    @media screen and (max-width: 1279px) {
+        .testimonials-item:last-child {
+            display: none;
+        }
+    }
+}
+
+/* === Testimonials desktop 1280px === */
+
+@media (min-width: 1280px) {
+    .testimonials-list {
+        display: flex;
+        text-align: center;
+        gap: 26px;
+    }
+
+    .testimonials-item {
+        width: calc((100% - 2 * 26px) / 3);
+    }
+}
