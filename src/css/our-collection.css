@@ -1,4 +1,4 @@
-.collection {
+.our-collection {
     background-image: url(/img/ornaments/yellow-ornament.png);
     background-size: 199px 177px;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
     }
 }
 @media screen and (min-width: 768px) {
-.collection {
+.our-collection {
     background-size: 338px 300px;
     background-position: -223px 320px;
 }
@@ -54,7 +54,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .collection {
+    .our-collection {
             background-position: -169px 365px;
         }
 .collection-item {
