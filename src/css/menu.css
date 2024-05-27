@@ -1,7 +1,7 @@
 
 
 
-.backdrop-menu{
+.backdrop-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,25 +12,24 @@
     visibility: hidden;
     opacity: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop-is-open{
+.is-open {
     opacity: 1;
     visibility: visible;
 }
 
 .mobile-menu-modal {
+    position: absolute;
     width: 274px;
     height: 812px;
     background: #ecd979;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+    right: 0;
     overflow: visible;
     background-image: url(../img/ornaments/dark-ornament.png);
     background-size: 340px 302px;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: -28px 560px;
 }
 
@@ -40,14 +39,21 @@
     position: absolute;
     top: 21px;
     right: 21px;
-    padding: 9px;
+    padding: 0px;
+    line-height: 0;
 }
 
 .mobile-menu-icon-close {
     stroke-width: 2px;
     stroke: #1c2225;
-    width: 18px;
-    height: 18px;
+    width: 36px;
+    height: 36px;
+}
+
+@media (min-resolution: 192dpi) {
+    .mobile-menu-modal {
+        background-image: url(../img/ornaments/dark-ornament@2x.png);
+    }
 }
 
 .mobile-menu-phone-link {
@@ -67,7 +73,7 @@
 }
 
 .mobile-menu-list {
-    padding-left: 130px;
+    padding-right: 32px;
     padding-top: 244px;
 }
 
@@ -77,6 +83,11 @@
     line-height: 1.29;
     text-transform: uppercase;
     color: #1c2225;
+}
+
+.mobile-menu-item {
+    line-height: 0;
+    text-align: right;
 }
 
 .mobile-menu-item:not(:last-child) {
@@ -99,15 +110,15 @@
     }
 
     .mobile-menu-btn-close {
-        padding: 11px;
+        padding: 0px;
         right: 32px;
         margin: 0;
     }
 
     .mobile-menu-icon-close {
         stroke-width: 3px;
-        width: 22px;
-        height: 22px;
+        width: 44px;
+        height: 44px;
     }
 
     .mobile-menu-list {
@@ -135,7 +146,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .backdrop-menu{
+    .backdrop-menu {
         display: none;
     }
 }
