@@ -29,7 +29,11 @@ gap: 20px;
         color: #fcf9f9;
 }
 
-
+@media screen and (min-resolution: 192dpi) and (min-width: 320px) {
+    .footer-container {
+        background-image: url(/img/ornaments/yellow-ornament@2x.png);
+    }
+}
 @media screen and (min-width: 375px) and (max-width: 767px) {
 .our-collection {
 background-position: -150px 190px;
