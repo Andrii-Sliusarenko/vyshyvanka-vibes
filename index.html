@@ -22,7 +22,7 @@
     
     <title>Vyshyvanka Vibes</title>
     <script type="module" crossorigin src="/vyshyvanka-vibes/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vyshyvanka-vibes/assets/index-81390ff9.css">
+    <link rel="stylesheet" href="/vyshyvanka-vibes/assets/index-fcb7e623.css">
   </head>
   <body>
     <header class="header">
@@ -85,7 +85,7 @@
           </a>
         </li>
       </ul>
-      <button class="header-btn-burger" type="button" open-modal>
+      <button class="header-btn-burger js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button" >
         <svg class="header-icon-burger" width="36" height="24">
           <use href="/vyshyvanka-vibes/assets/icons-73a07428.svg#icon-burger"></use>
         </svg>
@@ -416,14 +416,12 @@
 </footer>
 
     <section>
-  <div class="backdrop-menu backdrop-is-open">
+  <div class="backdrop-menu is-open js-menu-container" id="mobile-menu">
     <div class="mobile-menu-modal">
       <address>
-        <a class="mobile-menu-phone-link" href="tel:+380684439426"
-          >+380 (68) 443-94-26</a
-        >
+        <a class="mobile-menu-phone-link" href="tel:+380684439426">+380 (68) 443-94-26</a>
       </address>
-      <button class="mobile-menu-btn-close">
+      <button class="mobile-menu-btn-close js-close-menu">
         <svg class="mobile-menu-icon-close">
           <use href="../img/icons.svg#icon-x"></use>
         </svg>
@@ -445,7 +443,6 @@
     </div>
   </div>
 </section>
-
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
