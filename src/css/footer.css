@@ -7,9 +7,9 @@ FOOTER STYLES
 .footer-container {
   border-top: 1px solid rgba(252, 249, 249, 0.1);
   background-image: url(/img/ornaments/yellow-ornament.png);
-  background-size: 452px 401px;
   background-repeat: no-repeat;
   background-position: 50% 185%;
+  background-size: 452px 401px;
   padding: 40px 0 280px;
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 320px) {
@@ -22,11 +22,11 @@ FOOTER STYLES
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 61.1px;
-  gap: 25px;
-  column-gap: 40px;
-  margin-bottom: 40px;
   max-width: 280px;
+  height: 61.1px;
+  column-gap: 40px;
+  gap: 25px;
+  margin-bottom: 40px;
 }
 
 .footer-nav-list-item {
