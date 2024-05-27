@@ -21,20 +21,31 @@
         </a>
       </div>
       <div class="hero-block-image">
-        <img
-          class="hero-image"
+        <picture>
+          <source
           srcset="
-           ./img/hero/mob-hero-img.jpg
-           ./img/hero/mob-hero-img@2x.jpg
-           ./img/hero/tab-hero-img.jpg
-           ./img/hero/tab-hero-img@2x.jpg
-           ./img/hero/desk-hero-img.jpg
-           ./img/hero/desk-hero-img@2x.jpg
+          ./img/hero/desk-hero-img.jpg
+          ./img/hero/desk-hero-img@2x.jpg
           "
-          sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px, (max-width: 767px) 335px"
-          src="./img/hero/mob-hero-img.jpg"
+          media="(min-width: 1280px)"
+          />
+          <source
+          srcset="./img/hero/tab-hero-img.jpg
+ ./img/hero/tab-hero-img@2x.jpg"
+ media="(min-width: 768px)"
+ />
+ <source
+          srcset=" ./img/hero/mob-hero-img.jpg
+          ./img/hero/mob-hero-img@2x.jpg"
+          media=" (max-width: 767px) "
+          />
+          <img
+          src="./img/hero/desk-hero-img.jpg"
+          width="100%"
+          height="100%"
           alt="Girl"
-        />
+/>
+        </picture>
       </div>
     </div>
     
