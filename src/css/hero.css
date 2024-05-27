@@ -4,7 +4,7 @@
 }
 
 .hero {
-  padding-top: 132px;
+  padding-top: 84px;
 }
 
 .hero-star {
@@ -12,7 +12,7 @@
 }
 
 .hero-title {
-  color: var(--white);
+  color: #fcf9f9;
   font-size: 44px;
   font-weight: 400;
   line-height: 1.2;
@@ -22,7 +22,7 @@
 }
 
 .hero-title-span {
-  color: var(--yellow);
+  color: #ecd979;
 }
 
 .hero-link {
@@ -34,7 +34,7 @@
   background-color: transparent;
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
-  color: var(--white, #fcf9f9);
+  color: #fcf9f9;
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
@@ -49,14 +49,11 @@
 
 .hero-link:hover,
 .hero-link:focus {
-  border: 1px solid var(--yellow);
+  border: 1px solid #ecd979;
 }
 
 .hero-link-icon {
-  width: 26px;
-  height: 10px;
-  fill: var(--yellow);
-  transform: rotate(-30deg);
+  stroke: #ecd979;
 }
 
 .hero-button-link {
@@ -67,7 +64,7 @@
 /* ========================================================= Tab ========================================================= */
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 178px;
+    padding-top: 100px;
   }
 
   .hero-title {
@@ -120,10 +117,6 @@
 
 /* ========================================================= Deks ======================================================= */
 @media screen and (min-width: 1280px) {
-  .hero {
-    padding-top: 152px;
-  }
-
   .hero-block {
     display: flex;
     flex-direction: row-reverse;
@@ -160,7 +153,6 @@
   }
   .hero-star {
     position: relative;
-    padding-top: 26px;
   }
   .hero-group {
     position: absolute;
@@ -172,10 +164,6 @@
     gap: 16px;
     top: 14px;
     right: 98px;
-  }
-
-  .hero-group-icon {
-    fill: var(--yellow);
   }
 
   .hero-group-text {
