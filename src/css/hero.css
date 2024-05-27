@@ -9,7 +9,7 @@
     padding-top: 132px;
   }
   
-  .hero-sun {
+  .hero-star {
     position: relative;
   }
   
@@ -93,7 +93,8 @@
     }
   
     .hero-group-icon {
-      fill: var(--yellow);
+      fill: #ECD979;
+      ;
     }
   
     .hero-group-text {
@@ -162,7 +163,7 @@
       justify-content: center;
       align-items: center;
     }
-    .hero-sun {
+    .hero-star {
       position: relative;
       padding-top: 26px;
     }
