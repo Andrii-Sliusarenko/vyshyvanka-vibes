@@ -2,7 +2,7 @@
     background-image: url(/img/ornaments/yellow-ornament.png);
     background-size: 199px 177px;
     background-repeat: no-repeat;
-    background-position: -127px 370px;
+    background-position: -120px 150px;
 }
 .collection-title {
         font-weight: 500;
@@ -12,6 +12,12 @@
         color: #fcf9f9;
         text-align: center;
         margin-bottom: 40px;
+}
+.collection-menu {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
 }
 
 .colection-model-text{
@@ -23,16 +29,16 @@
         color: #fcf9f9;
 }
 
-@media screen and (max-width: 768px) {
-    .collection-item:not(:last-child){
-        margin-bottom: 20px;
-    }
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+.our-collection {
+background-position: -150px 190px;
+}
 }
 @media screen and (min-width: 768px) {
 .our-collection {
-    background-size: 338px 300px;
-    background-position: -223px 320px;
-}
+    background-size: 328px 330px;
+    background-position: -150px 200px;}
 
 .collection-title {
     font-size: 44px;
@@ -42,7 +48,6 @@
     font-size: 18px;
 }
 .collection-menu {
-    display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -55,7 +60,7 @@
 
 @media screen and (min-width: 1280px) {
     .our-collection {
-            background-position: -169px 365px;
+            /*background-position: -169px 290px;*/
         }
 .collection-item {
         flex-basis: calc((100%-40px)/3);
