@@ -41,6 +41,13 @@
 .header-social-icon {
   fill: #fcf9f9;
 }
+.header-btn-burger {
+  background-color: inherit;
+}
+.header-icon-burger {
+  color: rgba(236, 217, 121, 1);
+}
+
 @media screen and (min-width: 768px) {
   .header-container {
     gap: 440px;
