@@ -1,6 +1,3 @@
-
-
-
 .backdrop-menu {
     position: fixed;
     top: 0;
@@ -23,24 +20,32 @@
 .mobile-menu-modal {
     position: absolute;
     width: 274px;
-    height: 812px;
+    height: 100%;
     background: #ecd979;
     right: 0;
     overflow: visible;
     background-image: url(../img/ornaments/dark-ornament.png);
     background-size: 340px 302px;
     background-repeat: no-repeat;
-    background-position: -28px 560px;
+    background-position-x: -27px;
+    background-position-y: 510px;
 }
 
 .mobile-menu-btn-close {
-    border: none;
+    border: transparent;
     background-color: transparent;
     position: absolute;
     top: 21px;
     right: 21px;
     padding: 0px;
     line-height: 0;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-btn-close:hover,
+.mobile-menu-btn-close:focus {
+    border: solid 1px #1c2225;
+    border-radius: 50%;
 }
 
 .mobile-menu-icon-close {
@@ -60,6 +65,7 @@
     position: absolute;
     font-weight: 400;
     font-size: 12px;
+    font-style: normal;
     line-height: 1.17;
     text-transform: uppercase;
     color: #1c2225;
@@ -70,6 +76,14 @@
     border-radius: 15px;
     width: 158px;
     height: 38px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-phone-link:hover,
+.mobile-menu-phone-link:focus {
+    border: solid 1px #1c2225;
+    font-size: 13px;
 }
 
 .mobile-menu-list {
@@ -83,30 +97,34 @@
     line-height: 1.29;
     text-transform: uppercase;
     color: #1c2225;
+    border-color: #1c2225;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+    border: solid 1px #1c2225;
+    border-radius: 15px;
+    font-size: 15px;
 }
 
 .mobile-menu-item {
     line-height: 0;
     text-align: right;
+    border-color: #1c2225;
 }
 
 .mobile-menu-item:not(:last-child) {
     margin-bottom: 20px;
 }
 
-.mobile-menu-ornament-img {
-    width: 340px;
-    height: 302px;
-    position: absolute;
-    top: 69%;
-}
-
 @media screen and (min-width: 768px) {
     .mobile-menu-modal {
         width: 380px;
-        height: 1024px;
+        height: 100%;
         background-size: 545px 484px;
-        background-position: -74px 660px;
+        background-position: -74px 550px;
     }
 
     .mobile-menu-btn-close {
@@ -122,7 +140,22 @@
     }
 
     .mobile-menu-list {
-        padding-left: 224px;
+        margin-right: 32px;
+        margin-top: 291px;
+        margin-left: 224px;
+        padding: 0;
+        width: 135px;
+    }
+
+    .mobile-menu-link:focus,
+    .mobile-menu-link:hover {
+        font-size: 15px;
+    }
+
+
+    .mobile-menu-item {
+        padding: 0;
+        width: 135px;
     }
 
     .mobile-menu-item:not(:last-child) {
@@ -136,6 +169,11 @@
         margin: 0;
         left: 32px;
         padding: 14px 28px;
+    }
+
+    .mobile-menu-phone-link:hover,
+    .mobile-menu-phone-link:focus {
+        font-size: 14.5px;
     }
 
     .mobile-menu-ornament-img {
