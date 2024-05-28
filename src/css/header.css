@@ -88,6 +88,7 @@
   }
   .header-address {
     display: flex;
+    font-style: normal;
     align-items: center;
     justify-content: center;
     flex-direction: row;
@@ -107,5 +108,6 @@
     line-height: 1.43;
     text-transform: uppercase;
     color: #fcf9f9;
+    font-style: normal;
   }
 }
