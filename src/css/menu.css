@@ -23,14 +23,15 @@
 .mobile-menu-modal {
     position: absolute;
     width: 274px;
-    height: 812px;
+    height: 100%;
     background: #ecd979;
     right: 0;
     overflow: visible;
     background-image: url(../img/ornaments/dark-ornament.png);
     background-size: 340px 302px;
     background-repeat: no-repeat;
-    background-position: -28px 490px;
+    background-position-x: -27px;
+    background-position-y: 510px;
 }
 
 .mobile-menu-btn-close {
@@ -107,7 +108,7 @@
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
     border: solid 1px #1c2225;
-    border-radius: 35%;
+    border-radius: 15px;
     font-size: 15px;
 }
 
@@ -121,19 +122,12 @@
     margin-bottom: 20px;
 }
 
-.mobile-menu-ornament-img {
-    width: 340px;
-    height: 302px;
-    position: absolute;
-    top: 69%;
-}
-
 @media screen and (min-width: 768px) {
     .mobile-menu-modal {
         width: 380px;
-        height: 1024px;
+        height: 100%;
         background-size: 545px 484px;
-        background-position: -74px 660px;
+        background-position: -74px 550px;
     }
 
     .mobile-menu-btn-close {
