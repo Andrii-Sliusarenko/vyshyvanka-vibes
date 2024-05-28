@@ -32,14 +32,6 @@ gap: 20px;
         text-transform: uppercase;
         color: #fcf9f9;
 }
-.card-front{
- box-shadow: 0 2px 32px 4px rgba(18, 20, 23, 0.02);
- border: 1px solid rgba(252, 249, 249, 0.1);
- border-radius: 4px;
- padding: 0px 18px 18px 18px;
- position: relative;
- margin-top: 64px;
-}
 
 @media screen and (min-resolution: 192dpi) and (min-width: 320px) {
     .footer-container {
