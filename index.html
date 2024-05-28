@@ -22,7 +22,7 @@
     
     <title>Vyshyvanka Vibes</title>
     <script type="module" crossorigin src="/vyshyvanka-vibes/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vyshyvanka-vibes/assets/index-e1d25a06.css">
+    <link rel="stylesheet" href="/vyshyvanka-vibes/assets/index-c59cf880.css">
   </head>
   <body>
     <header class="header">
@@ -369,32 +369,82 @@
   </div>
 </section>
 
-      <section id="customer-order">
-    <div class="section-order">
-        <div class="order-img"></div>
-        <div class="order-desktop-container">
-            <div class="order-main-text">
-                <span class="order-main-text-span">Your order</span> is our priority: Personalized approach and quality of service
-                <form action="" class="order-form">
-                    <input class="order-form-input" type="text" name="username" id="" placeholder="Enter your full name">
-                    <input class="order-form-input" type="email" name="email" id="" placeholder="Enter your email">
-                    <!-- <label> -->
-                        <textarea class="order-form-input" name="comments" rows="5" placeholder="Comments"></textarea>
-                    <!-- </label> -->
-                    <button class="order-btn">
-                        <span class="order-btn-text">Send</span>
-                        <svg class="order-svg" width="24" height="16">
-                            <use href="..img/icons.svg#icon-arrow"></use>
-                        </svg>
-                    </button>
-                </form>
-            </div>
-        <div class="main-order-img-tab"><img src="..img/order/tab-order@2x.jpg" alt=""></div>
-        <div class="main-order-img-desk"><img src="..img/order/desk-order@2x.jpg" alt=""></div>
+      <section class="section">
+    <div class="order-section">
+      <div class="order-img-girl"></div>
+      <div class="container">
+        <div class="order-form-desc">
+          <div class="order-form-box"  id="customer-order">
+            <h2 class="order-subtitle">
+              <span class="order-orange-word">Your order</span> is our priority:
+              Personalized approach and quality of service
+            </h2>
+  
+            <form class="order-forms">
+              <div class="order-form-input-box">
+                <input
+                  class="order-form-input"
+                  type="text"
+                  name="user-name"
+                  pattern="[a-zA-ZА-Яа-яїЇіІєЄ'Ґґ]+"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+  
+              <div class="order-form-input-box">
+                <input
+                  class="order-form-input"
+                  type="email"
+                  name="user-email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+  
+              <div class="order-form-wrapper-comment">
+                <textarea
+                  class="order-form-input order-form-comment"
+                  name="user-comment"
+                  placeholder="Comments"
+                  required
+                ></textarea>
+              </div>
+  <button class="order-form-button" type="submit">
+                Send<svg
+                  class="order-icon"
+                  width="24"
+                  height="20"
+                  aria-label="icon-arrow"
+                >
+                  <use href="/vyshyvanka-vibes/assets/icons-73a07428.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+  
+          <div class="order-foto">
+            <picture>
+              <source
+                srcset="/vyshyvanka-vibes/assets/desk-order-f231b417.jpg 1x, /vyshyvanka-vibes/assets/desk-order@2x-843b5142.jpg 2x"
+                media="(min-width: 1128px)"
+              />
+              <source
+                srcset="/vyshyvanka-vibes/assets/tab-order-8dbdd4f9.jpg 1x, /vyshyvanka-vibes/assets/tab-order@2x-471e420a.jpg 2x"
+                media="(min-width: 768px)"
+              />
+  
+              <img
+                class="orders-img"
+                src="/vyshyvanka-vibes/assets/desk-order-f231b417.jpg"
+                alt="Ukrainiane woman shirt"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-</section>
-
+  </section>
       <section class="section testimonials-section" id="testimonials">
   <div class="container">
     <h2 class="section-title testimonials-title">Testimonials</h2>
