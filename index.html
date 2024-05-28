@@ -22,7 +22,7 @@
     
     <title>Vyshyvanka Vibes</title>
     <script type="module" crossorigin src="/vyshyvanka-vibes/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vyshyvanka-vibes/assets/index-1e5c17ac.css">
+    <link rel="stylesheet" href="/vyshyvanka-vibes/assets/index-df9701a0.css">
   </head>
   <body>
     <header class="header">
@@ -91,7 +91,12 @@
           </a>
         </li>
       </ul>
-      <button class="header-btn-burger" type="button" open-modal>
+      <button
+        class="header-btn-burger js-open-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
         <svg class="header-icon-burger" width="36" height="24">
           <use href="/vyshyvanka-vibes/assets/icons-73a07428.svg#icon-burger"></use>
         </svg>
