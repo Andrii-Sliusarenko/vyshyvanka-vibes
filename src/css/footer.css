@@ -57,6 +57,9 @@ FOOTER STYLES
   color: #ecd979;
 }
 @media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 50px;
+  }
   .footer-container {
     background-position: right -274px bottom -17px;
     padding: 40px 0;
@@ -90,6 +93,9 @@ FOOTER STYLES
   }
 }
 @media screen and (min-width: 1280px) {
+  .footer {
+    padding-top: 75px;
+  }
   .footer-container {
     background-size: 595px 528px;
     background-position: right -259px bottom -104px;
